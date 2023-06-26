@@ -1,0 +1,62 @@
+﻿@model List<BaiTap02.Models.Product>
+
+@{
+    int stt = 0;
+}
+
+<style>
+    .cat-img {
+        width: 6rem
+    }
+</style>
+
+<div class="row align-items-center">
+    <div class="col-8">
+        <h1>Danh sách sản phẩm</h1>
+    </div>
+    <div class="col-4">
+        <a class="btn btn-primary" href="/product/add">Thêm Sản phẩm</a>
+    </div>
+    <div>
+        <form action="/product" method="GET">
+            <input type="text" placeholder="Search" name="productname" />
+            <button type="submit">Tìm</button>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered cat-table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th>Mã danh muc</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    stt++;
+                    <tr>
+                        <td>@stt</td>
+                        
+                        <td>
+                            <img class="cat-img" src="@item.ProductPicture" />
+                        </td>
+                        <td>@item.ProductName</td>
+                        <td>@item.Category.Name</td>
+                        <td>
+                            <a class="btn btn-sm btn-warning m-2" href="/product/edit?id=@item.Id">Sửa</a>
+                            <a class="btn btn-sm btn-danger"  href="/product/delete?id=@item.Id">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

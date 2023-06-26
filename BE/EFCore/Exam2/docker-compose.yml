@@ -1,0 +1,18 @@
+version: "1.0"
+
+services:
+  db:
+    image: db:v1
+    hostname: db
+    container_name: db
+    ports:
+      - "1521:1521"
+      
+  exam2:
+    image: exam2:v1
+    hostname: exam2
+    container_name: exam2
+    ports:
+      - "9090:80"
+    depends_on:
+      - db

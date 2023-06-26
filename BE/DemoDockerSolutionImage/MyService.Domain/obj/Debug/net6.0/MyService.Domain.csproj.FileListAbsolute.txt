@@ -1,0 +1,12 @@
+D:\BE\DemoDockerSolutionImage\MyService.Domain\bin\Debug\net6.0\MyService.Domain.deps.json
+D:\BE\DemoDockerSolutionImage\MyService.Domain\bin\Debug\net6.0\MyService.Domain.dll
+D:\BE\DemoDockerSolutionImage\MyService.Domain\bin\Debug\net6.0\MyService.Domain.pdb
+D:\BE\DemoDockerSolutionImage\MyService.Domain\obj\Debug\net6.0\MyService.Domain.csproj.AssemblyReference.cache
+D:\BE\DemoDockerSolutionImage\MyService.Domain\obj\Debug\net6.0\MyService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\BE\DemoDockerSolutionImage\MyService.Domain\obj\Debug\net6.0\MyService.Domain.AssemblyInfoInputs.cache
+D:\BE\DemoDockerSolutionImage\MyService.Domain\obj\Debug\net6.0\MyService.Domain.AssemblyInfo.cs
+D:\BE\DemoDockerSolutionImage\MyService.Domain\obj\Debug\net6.0\MyService.Domain.csproj.CoreCompileInputs.cache
+D:\BE\DemoDockerSolutionImage\MyService.Domain\obj\Debug\net6.0\MyService.Domain.dll
+D:\BE\DemoDockerSolutionImage\MyService.Domain\obj\Debug\net6.0\refint\MyService.Domain.dll
+D:\BE\DemoDockerSolutionImage\MyService.Domain\obj\Debug\net6.0\MyService.Domain.pdb
+D:\BE\DemoDockerSolutionImage\MyService.Domain\obj\Debug\net6.0\ref\MyService.Domain.dll

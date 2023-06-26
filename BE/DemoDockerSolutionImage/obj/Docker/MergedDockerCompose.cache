@@ -1,0 +1,18 @@
+name: dockercompose18320162203657950007
+services:
+  myservice.app:
+    build:
+      context: D:\BE\DemoDockerSolutionImage
+      dockerfile: MyService.App/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: myserviceapp
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose18320162203657950007_default

@@ -1,0 +1,58 @@
+﻿@model List<BaiTap02.Models.Category>
+
+@{
+    int stt = 0;
+}
+
+<style>
+    .cat-img {
+        width: 6rem
+    }
+</style>
+@if (!string.IsNullOrEmpty(ViewBag.Success))
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @ViewBag.Success
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<div class="row align-items-center">
+    <div class="col-8">
+        <h1>Danh sách danh mục</h1>
+    </div>
+    <div class="col-4">
+        <a class="btn btn-primary" href="/category/add">Thêm danh mục</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered cat-table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var item in Model)
+                {
+                    stt++;
+                    <tr>
+                        <td>@stt</td>
+                        <td>
+                            <img class="cat-img" src="@item.PictureUrl" />
+                        </td>
+                        <td><a href="/category/getcategorybyid?id=@item.Id">@item.Name</a></td>
+                        <td>
+                            <a class="btn btn-sm btn-warning m-2" href="/category/edit?id=@item.Id">Sửa</a>
+                            <a class="btn btn-sm btn-danger" href="/category/delete?id=@item.Id" >Xóa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+﻿@model List<StudentMVC.Models.Lop>
+
+
+@{
+    int stt = 0;
+}
+<style>
+    .cen{
+        text-align:center;
+    }
+    
+</style>
+
+<div class="row align-items-center">
+    <div class="col-8">
+        <h1>Danh sách lớp</h1>
+    </div>
+    <div class="col-4">
+        <a class="btn btn-primary" href="/lop/add" >Thêm lớp</a>
+    </div>
+</div>
+
+<div class="row cen">
+    <div class="col-12">
+        <table class="table table-bordered cat-table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên Lớp</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    stt++;
+                    <tr>
+                        <td>@stt</td>
+                        <td><a href="">@item.TenLop</a></td>
+
+                        <td>
+                            <a class="btn btn-sm btn-warning m-2" href="/lop/edit?malop=@item.MaLop">Sửa</a>
+                            <a class="btn btn-sm btn-danger" href="/lop/delete?malop=@item.MaLop">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

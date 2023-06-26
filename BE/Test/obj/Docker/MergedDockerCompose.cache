@@ -1,0 +1,18 @@
+name: dockercompose17916881191770436500
+services:
+  bai2:
+    build:
+      context: D:\BE\Test
+      dockerfile: Bai2/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: bai2
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose17916881191770436500_default

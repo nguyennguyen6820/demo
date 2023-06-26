@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MyService.Infrastructure/1.0.0": {
+        "dependencies": {
+          "MyService.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MyService.Infrastructure.dll": {}
+        }
+      },
+      "MyService.Domain/1.0.0": {
+        "runtime": {
+          "MyService.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MyService.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyService.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

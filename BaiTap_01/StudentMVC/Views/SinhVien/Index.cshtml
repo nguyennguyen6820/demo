@@ -1,0 +1,67 @@
+﻿@model List<StudentMVC.Models.SinhVien>
+
+
+@{
+    int stt = 0;
+}
+<style>
+    .cen {
+        text-align: center;
+    }
+    .den{
+        text-decoration:none;
+        color: #000;
+    }
+</style>
+
+<div class="row align-items-center">
+    <div class="col-4">
+        <h1>Danh sách sinh viên</h1>
+    </div>
+    <div class="col-4">
+        <form action="/sinhvien" method="GET">
+            <input type="search" name="keyword">
+            <input type="submit" value="Tim">
+        </form>
+    </div>
+    <div class="col-4">
+        <a class="btn btn-primary" href="/sinhvien/add">Thêm sinh viên</a>
+    </div>
+</div>
+
+<div class="row cen">
+    <div class="col-12">
+        <table class="table table-bordered cat-table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Lớp</th>
+                    <th>Tên Sinh Viên</th>
+                    <th>Ngày Sinh</th>
+                    <th>Giới Tính</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    stt++;
+                    var dob = string.Format("{0:dd/MM/yyyy}",item.NgaySinh);
+                    var gender = item.GioiTinh ? "Nam" : "Nữ";
+                    <tr>
+                        <td>@stt</td>
+                        <td><a href="/sinhvien/laysinhvientheolop/@item.MaLop" class="den">@item.Lop.MaLop</a></td>
+                        <td>@item.TenSV</td>
+                        <td>  @dob</td>
+                        <td>@gender </td>
+
+                        <td>
+                            <a class="btn btn-sm btn-warning m-2" href="/sinhvien/edit?masv=@item.MaSV">Sửa</a>
+                            <a class="btn btn-sm btn-danger" href="/sinhvien/delete?masv=@item.MaSV">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

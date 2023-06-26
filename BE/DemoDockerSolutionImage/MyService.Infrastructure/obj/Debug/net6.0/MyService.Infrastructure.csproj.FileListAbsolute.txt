@@ -1,0 +1,15 @@
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\bin\Debug\net6.0\MyService.Infrastructure.deps.json
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\bin\Debug\net6.0\MyService.Infrastructure.dll
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\bin\Debug\net6.0\MyService.Infrastructure.pdb
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\bin\Debug\net6.0\MyService.Domain.dll
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\bin\Debug\net6.0\MyService.Domain.pdb
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\obj\Debug\net6.0\MyService.Infrastructure.csproj.AssemblyReference.cache
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\obj\Debug\net6.0\MyService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\obj\Debug\net6.0\MyService.Infrastructure.AssemblyInfoInputs.cache
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\obj\Debug\net6.0\MyService.Infrastructure.AssemblyInfo.cs
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\obj\Debug\net6.0\MyService.Infrastructure.csproj.CoreCompileInputs.cache
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\obj\Debug\net6.0\MyService.Infrastructure.csproj.CopyComplete
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\obj\Debug\net6.0\MyService.Infrastructure.dll
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\obj\Debug\net6.0\refint\MyService.Infrastructure.dll
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\obj\Debug\net6.0\MyService.Infrastructure.pdb
+D:\BE\DemoDockerSolutionImage\MyService.Infrastructure\obj\Debug\net6.0\ref\MyService.Infrastructure.dll

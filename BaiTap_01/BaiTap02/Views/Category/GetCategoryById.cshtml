@@ -1,0 +1,48 @@
+﻿@model BaiTap02.Models.Category
+
+@{
+    int stt = 0;
+}
+
+<style>
+    .cat-img {
+        width: 6rem
+    }
+</style>
+
+<div class="row align-items-center">
+    <div class="col-8">
+        <h1>Danh sách sản phẩm @Model.Name</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered cat-table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.products)
+                {
+                    
+                    stt++;
+                    <tr>
+                        <td>@stt</td>
+
+                        <td>
+                            <img class="cat-img" src="@item.ProductPicture" />
+                        </td>
+                        <td>@item.ProductName</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
